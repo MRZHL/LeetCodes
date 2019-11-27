@@ -32,4 +32,6 @@ print("乘积最大子序列\(maxProduce2([2,3,-2,4]))")
 
 print("旋转数组\(rotate([1,2],0))")
 
+print("存在重复元素\(containsDuplicate2([1,2,3,2]))")
+
 
