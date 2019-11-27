@@ -15,6 +15,7 @@
 		5B09D551238CCCCC00A4C0AA /* 乘积最大子序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D550238CCCCC00A4C0AA /* 乘积最大子序列.swift */; };
 		5B09D553238CEE8C00A4C0AA /* 旋转数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D552238CEE8C00A4C0AA /* 旋转数组.swift */; };
 		5B09D557238E099700A4C0AA /* 存在重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D556238E099700A4C0AA /* 存在重复元素.swift */; };
+		5B09D559238E0EAD00A4C0AA /* 移动0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D558238E0EAD00A4C0AA /* 移动0.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		5B09D550238CCCCC00A4C0AA /* 乘积最大子序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "乘积最大子序列.swift"; sourceTree = "<group>"; };
 		5B09D552238CEE8C00A4C0AA /* 旋转数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "旋转数组.swift"; sourceTree = "<group>"; };
 		5B09D556238E099700A4C0AA /* 存在重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "存在重复元素.swift"; sourceTree = "<group>"; };
+		5B09D558238E0EAD00A4C0AA /* 移动0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "移动0.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				5B09D550238CCCCC00A4C0AA /* 乘积最大子序列.swift */,
 				5B09D552238CEE8C00A4C0AA /* 旋转数组.swift */,
 				5B09D556238E099700A4C0AA /* 存在重复元素.swift */,
+				5B09D558238E0EAD00A4C0AA /* 移动0.swift */,
 			);
 			path = suanfa;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				5B09D553238CEE8C00A4C0AA /* 旋转数组.swift in Sources */,
 				5B09D54F2386A06E00A4C0AA /* 回文字符串.swift in Sources */,
+				5B09D559238E0EAD00A4C0AA /* 移动0.swift in Sources */,
 				5B09D549238674E700A4C0AA /* onlyOne.swift in Sources */,
 				5B09D54D23868E0D00A4C0AA /* 合并两个有序数组.swift in Sources */,
 				5B09D557238E099700A4C0AA /* 存在重复元素.swift in Sources */,
