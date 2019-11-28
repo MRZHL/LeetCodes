@@ -1,5 +1,46 @@
 #LeetCodes
 
+## 2019-11-28
+### 打乱数组，这个比较简单
+思路，找一个数组 存储原始数组，
+遍历数组， 随机产生一个 0 ..< count 的 下标
+交换 遍历的当前述 和 随机下标对应的数 
+
+
+```
+class Solution {
+    var originArr:[Int]
+    var nums:[Int]
+    let count:Int
+    init(_ nums: [Int]) {
+        self.originArr = nums
+        self.nums = nums
+        count = nums.count
+    }
+    
+    /** Resets the array to its original configuration and return it. */
+    func reset() -> [Int] {
+        return originArr
+    }
+    
+    /** Returns a random shuffling of the array. */
+    func shuffle() -> [Int] {
+        for index in 0 ..< count {
+           
+            let randomIndex = Int.random(in: 0 ..< count)
+            print(randomIndex)
+            // 交互两个数
+            let temp = nums[index]
+            nums[index] = nums[randomIndex]
+            nums[randomIndex] = temp
+        }
+         return nums
+    }
+}
+
+```
+
+
 ## 2019-11-27
 ### 给定一个数组，是否存在重复数组 
 
