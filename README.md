@@ -1,5 +1,41 @@
 #LeetCodes
 
+## 2019-11-29
+### 两数之和
+直接暴力破解法
+
+```
+func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    for i in 0 ..< (nums.count - 1){
+        for j in (i + 1) ... (nums.count - 1){
+            if nums[i] + nums[j] == target {
+                return [i,j]
+            }
+        }
+    }
+    return []
+}
+```
+最后的执行结果是
+> 执行用时 :604 ms, 在所有 swift 提交中击败了 25.61%的用户,内存消耗 :21 MB, 在所有 swift 提交中击败了5.12%的用户
+
+看了一下大佬们的想法，是 遍历一次，把之前的遍历过的值装进一个 字典里，key 是 值， value 是下标，所以可以根据 target - currentValue 当作key 直接去取 index ,取到值就返回，没有取到就存到字典里
+
+```
+func twoSums(_ nums: [Int], _ target: Int) -> [Int] {
+    var dic = [Int:Int]()
+    for (index,value) in nums.enumerated(){
+        let subValue = target - value
+        if let otherIndex = dic[subValue]{
+            return [otherIndex,index]
+        }
+        dic[value] = index
+    }
+    return []
+}
+```
+
+
 ## 2019-11-28
 ### 打乱数组，这个比较简单
 思路，找一个数组 存储原始数组，

@@ -17,6 +17,7 @@
 		5B09D557238E099700A4C0AA /* 存在重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D556238E099700A4C0AA /* 存在重复元素.swift */; };
 		5B09D559238E0EAD00A4C0AA /* 移动0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D558238E0EAD00A4C0AA /* 移动0.swift */; };
 		5B09D565238F5EAD00A4C0AA /* 打乱数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D564238F5EAD00A4C0AA /* 打乱数组.swift */; };
+		5B09D5C62390AF7E00A4C0AA /* 两数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		5B09D556238E099700A4C0AA /* 存在重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "存在重复元素.swift"; sourceTree = "<group>"; };
 		5B09D558238E0EAD00A4C0AA /* 移动0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "移动0.swift"; sourceTree = "<group>"; };
 		5B09D564238F5EAD00A4C0AA /* 打乱数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "打乱数组.swift"; sourceTree = "<group>"; };
+		5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "两数之和.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				5B09D556238E099700A4C0AA /* 存在重复元素.swift */,
 				5B09D558238E0EAD00A4C0AA /* 移动0.swift */,
 				5B09D564238F5EAD00A4C0AA /* 打乱数组.swift */,
+				5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */,
 			);
 			path = suanfa;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				5B09D553238CEE8C00A4C0AA /* 旋转数组.swift in Sources */,
 				5B09D565238F5EAD00A4C0AA /* 打乱数组.swift in Sources */,
+				5B09D5C62390AF7E00A4C0AA /* 两数之和.swift in Sources */,
 				5B09D54F2386A06E00A4C0AA /* 回文字符串.swift in Sources */,
 				5B09D559238E0EAD00A4C0AA /* 移动0.swift in Sources */,
 				5B09D549238674E700A4C0AA /* onlyOne.swift in Sources */,
