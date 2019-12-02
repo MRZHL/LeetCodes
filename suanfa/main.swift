@@ -36,3 +36,6 @@ print("存在重复元素\(containsDuplicate2([1,2,3,2]))")
 var nums = [0,1,2,3,2]
 print("移动 0\(moveZeroes2(&nums))")
 
+print("整数反转\(reverse(1534236469))")
+
+

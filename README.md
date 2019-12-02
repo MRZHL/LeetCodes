@@ -1,5 +1,58 @@
 # LeetCodes
 
+## 2019-12-02
+### 整数反转
+
+想法, 将Int -> String -> reverse -> Int
+再根据输入的值确定符号, 判断是否在区间内
+```
+func reverse(_ x: Int) -> Int {
+    
+    func rever(_ x:Int)->String{
+        let str = String(x)
+        var arr = Array(str)
+        arr.reverse()
+        let temp = String(arr)
+        return temp
+    }
+    
+    var value = 0
+
+    if x > 0 {
+        value = Int(rever(x))!
+    }else if x < 0{
+        var temp:String = rever(x)
+        temp.removeLast()
+        value = Int(temp)! * -1
+    }
+    let max = pow(2.0, 31.0) - 1
+    let min = pow(2.0, 31.0) * -1
+    if value >= Int(max) || value <= Int(min){
+        value = 0
+    }
+    return value
+    
+}
+
+```
+最后执行的结果
+执行用时 :8 ms, 在所有 swift 提交中击败了85.86%的用户
+内存消耗 :20.9 MB, 在所有 swift 提交中击败了5.19%的用户
+
+值得注意的 地方刚开始的时候 使用 `pow(2,31)` 返回的是一个 `Decimal` 的对象 
+使用的方法在Foundtion 里
+```
+public func pow(_ x: Decimal, _ y: Int) -> Decimal
+```
+不能通过 Int() 来直接转换为 Int 对象
+后来使用的方法是
+```
+public func pow(_: Double, _: Double) -> Double
+```
+就好使了
+
+
+
 ## 2019-11-29
 ### 两数之和
 直接暴力破解法
