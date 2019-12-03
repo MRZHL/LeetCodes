@@ -38,4 +38,16 @@ print("移动 0\(moveZeroes2(&nums))")
 
 print("整数反转\(reverse(1534236469))")
 
+var one:ListNode = ListNode(3)
+one.next = ListNode(4)
+one.next?.next = ListNode(2)
+
+var two:ListNode = ListNode(4)
+two.next = ListNode(6)
+two.next?.next = ListNode(5)
+
+print("两数相加 \(addTwoNumbers(one, two))")
+
+
+
 
