@@ -20,6 +20,7 @@
 		5B09D5C62390AF7E00A4C0AA /* 两数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */; };
 		5B7197A52394A3F700E97032 /* 两数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7197A42394A3F700E97032 /* 两数相加.swift */; };
 		5B7197A72394B40700E97032 /* 整数反转.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7197A62394B40700E97032 /* 整数反转.swift */; };
+		5B7FD1CB2397476100E35709 /* 寻找两个有序数组的中位数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FD1CA2397476100E35709 /* 寻找两个有序数组的中位数.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "两数之和.swift"; sourceTree = "<group>"; };
 		5B7197A42394A3F700E97032 /* 两数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "两数相加.swift"; sourceTree = "<group>"; };
 		5B7197A62394B40700E97032 /* 整数反转.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "整数反转.swift"; sourceTree = "<group>"; };
+		5B7FD1CA2397476100E35709 /* 寻找两个有序数组的中位数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "寻找两个有序数组的中位数.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */,
 				5B7197A42394A3F700E97032 /* 两数相加.swift */,
 				5B7197A62394B40700E97032 /* 整数反转.swift */,
+				5B7FD1CA2397476100E35709 /* 寻找两个有序数组的中位数.swift */,
 			);
 			path = suanfa;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				5B09D557238E099700A4C0AA /* 存在重复元素.swift in Sources */,
 				5B09D54B23867B1600A4C0AA /* 求众数.swift in Sources */,
 				5B09D551238CCCCC00A4C0AA /* 乘积最大子序列.swift in Sources */,
+				5B7FD1CB2397476100E35709 /* 寻找两个有序数组的中位数.swift in Sources */,
 				5B09D542238674BA00A4C0AA /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

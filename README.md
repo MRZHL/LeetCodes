@@ -1,6 +1,82 @@
 # LeetCodes
+## 2019-12-04
+###  寻找两个有序数组的中位数
+给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
+
+请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
+
+你可以假设 nums1 和 nums2 不会同时为空。
+示例 1:
+
+```
+nums1 = [1, 3]
+nums2 = [2]
+
+则中位数是 2.0
+```
+
+示例 2:
+
+```
+nums1 = [1, 2]
+nums2 = [3, 4]
+
+则中位数是 (2 + 3)/2 = 2.5
+```
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/median-of-two-sorted-arrays
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+思路，合并有序数组，然后找出新数组中的中位数，个数为奇数的为 count / 2 位置上的 数 偶数的为 count / 2 + count / 2 - 1 位置上的数的平均数.
+
+中间想优化的时候，排序的时候 只拍到一半就可以求中位数了，但是结果耗时更多
+
+
+```
+func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
+    
+    func paixu(_ num1:[Int],_ num2:[Int]) -> [Int]{
+        var result = [Int]()
+        var i = 0
+        var j = 0
+        while i < num1.count && j < num2.count {
+            if num1[i] < num2[j] {
+                result.append(num1[i])
+                i += 1
+            }else{
+                result.append(num2[j])
+                j += 1
+            }
+        }
+        
+        while i < num1.count {
+            result.append(num1[i])
+            i += 1
+        }
+        
+        while j < num2.count {
+            result.append(num2[j])
+            j += 1
+        }
+        return result
+    }
+    
+    let temp = paixu(nums1, nums2)
+    guard temp.count > 1 else {
+        return Double(temp[0])
+    }
+    if temp.count % 2 == 0{
+        return Double((temp[temp.count/2] + temp[temp.count/2 - 1])) / 2.0
+    }else{
+        return Double(temp[temp.count/2])
+    }
+}
+
+
+```
 ## 2019-12-03
-## 两数相加
+### 两数相加
 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。

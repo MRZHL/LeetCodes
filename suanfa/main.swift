@@ -45,9 +45,13 @@ one.next?.next = ListNode(2)
 var two:ListNode = ListNode(4)
 two.next = ListNode(6)
 two.next?.next = ListNode(5)
-
 print("两数相加 \(addTwoNumbers(one, two))")
 
 
 
+let value = findMedianSortedArrays([1,3], [2])
+
+print("寻找两个有序数组中的中位数\(value)")
+
+print("end")
 
