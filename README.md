@@ -1,4 +1,104 @@
 # LeetCodes
+
+## 2019-12-09
+盛水最多的容器
+//给定 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水
+//
+//来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/container-with-most-water
+
+方法直接暴力法
+两次遍历,提交的时候直接超出了时间限制
+
+```
+// 有最基础的暴利破解法
+// 超出时间限制
+func maxArea(_ height: [Int]) -> Int {
+    var max = 0
+    for i in 0 ..< (height.count - 1){
+        for j in 1...(height.count - 1){
+            let y = min(height[i], height[j])
+            max = max > (y * (j - i)) ? max : (y * (j - i))
+        }
+    }
+    return max
+}
+```
+
+双指针法
+
+```
+// 双指针法
+// [1,8,6,2,5,4,8,3,7]
+// 面积是 两个数的最小值 * 宽度
+func maxAreas(_ height: [Int]) -> Int{
+    var before = 0
+    var after = height.count - 1
+    var max = 0
+    
+    while before < after {
+        let area = min(height[after], height[before]) * (after - before)
+        max = max > area ? max : area
+        if height[after] > height[before] {
+            before += 1
+        }else if height[after] < height[before] {
+            after -= 1
+        }else{
+            before += 1
+            after -= 1
+        }
+    }
+    
+    return max
+}
+```
+
+## 2019-12-05
+### 回文数
+方法一， 最容易想到的，将Int -> String -> Array -> reverse() -> Int
+判断是否相等就可以
+
+```
+func isPalindrome(_ x: Int) -> Bool {
+    guard x >= 0 else {
+        return false
+    }
+    let s = String(x)
+    var temp = Array(s)
+    temp.reverse()
+    let y = Int(String(temp))
+    return y == x
+}
+```
+执行结果//执行用时 :88 ms, 在所有 swift 提交中击败了10.67%的用户，内存消耗 :20.9 MB, 在所有 swift 提交中击败了5.03%的用户。
+
+方法二 ，看这个数的一半和另外一半是否相等
+将这个数主键 除以 10 ，结果是这个数 缩小十倍，余数是 个位数 -> 十位数 -> 百位数 。。。。
+
+```
+
+/// 思路 让 x 每次缩小十倍 12321 -> 1232 -> 123 -> 12
+///     让 temp 每次扩大十倍 + x 的余数 ,余数就是从个位数 开始,每次缩小十倍的数, 当着两个数 想等的时候,就是回文数(偶数),或者 temp / 10 = x 的时候(奇数)就是回文数
+/// - Parameter x:
+func isPalindromes(_ x: Int) -> Bool {
+    // < 0 和能被整除的
+    
+    if x < 0 || (x % 10 == 0 && x != 0){
+        return false
+    }
+    
+    var end = 0
+    var compare = x
+    
+    while compare > end {
+        end = end * 10 + compare % 10
+        compare = compare / 10
+    }
+    
+    return compare == end || compare == end / 10
+}
+```
+
 ## 2019-12-04
 ###  寻找两个有序数组的中位数
 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。

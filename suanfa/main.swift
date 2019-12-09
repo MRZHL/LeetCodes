@@ -53,5 +53,27 @@ let value = findMedianSortedArrays([1,3], [2])
 
 print("寻找两个有序数组中的中位数\(value)")
 
+print("最长回文子串\(longestPalindrome(""))")
+
+
+let arr = ["a","b","c"]
+let str = "#" + arr.joined(separator: "#") + "#" // 插入“#”
+let strLen = str.count
+let temp = Array(str)
+
+
+arr.joined(separator: "#")
+
+
+
+
+//MARK:回文数
+print("回文数\(isPalindromes(0))")
+
+//MARK:盛最多水的容器
+let height = [1,8,6,2,5,4,8,3,7]
+print("盛最多水的容器\(maxAreas(height))")
+
 print("end")
+
 

@@ -18,6 +18,9 @@
 		5B09D559238E0EAD00A4C0AA /* 移动0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D558238E0EAD00A4C0AA /* 移动0.swift */; };
 		5B09D565238F5EAD00A4C0AA /* 打乱数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D564238F5EAD00A4C0AA /* 打乱数组.swift */; };
 		5B09D5C62390AF7E00A4C0AA /* 两数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */; };
+		5B0C747223989886002C4BDC /* 最长回文子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C747123989886002C4BDC /* 最长回文子串.swift */; };
+		5B0C7478239DDC40002C4BDC /* 回文数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C7477239DDC40002C4BDC /* 回文数.swift */; };
+		5B0C747A239DECE5002C4BDC /* 盛最多水的容器.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C7479239DECE5002C4BDC /* 盛最多水的容器.swift */; };
 		5B7197A52394A3F700E97032 /* 两数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7197A42394A3F700E97032 /* 两数相加.swift */; };
 		5B7197A72394B40700E97032 /* 整数反转.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7197A62394B40700E97032 /* 整数反转.swift */; };
 		5B7FD1CB2397476100E35709 /* 寻找两个有序数组的中位数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FD1CA2397476100E35709 /* 寻找两个有序数组的中位数.swift */; };
@@ -48,6 +51,9 @@
 		5B09D558238E0EAD00A4C0AA /* 移动0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "移动0.swift"; sourceTree = "<group>"; };
 		5B09D564238F5EAD00A4C0AA /* 打乱数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "打乱数组.swift"; sourceTree = "<group>"; };
 		5B09D5C52390AF7E00A4C0AA /* 两数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "两数之和.swift"; sourceTree = "<group>"; };
+		5B0C747123989886002C4BDC /* 最长回文子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "最长回文子串.swift"; sourceTree = "<group>"; };
+		5B0C7477239DDC40002C4BDC /* 回文数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "回文数.swift"; sourceTree = "<group>"; };
+		5B0C7479239DECE5002C4BDC /* 盛最多水的容器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "盛最多水的容器.swift"; sourceTree = "<group>"; };
 		5B7197A42394A3F700E97032 /* 两数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "两数相加.swift"; sourceTree = "<group>"; };
 		5B7197A62394B40700E97032 /* 整数反转.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "整数反转.swift"; sourceTree = "<group>"; };
 		5B7FD1CA2397476100E35709 /* 寻找两个有序数组的中位数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "寻找两个有序数组的中位数.swift"; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 				5B7197A42394A3F700E97032 /* 两数相加.swift */,
 				5B7197A62394B40700E97032 /* 整数反转.swift */,
 				5B7FD1CA2397476100E35709 /* 寻找两个有序数组的中位数.swift */,
+				5B0C747123989886002C4BDC /* 最长回文子串.swift */,
+				5B0C7477239DDC40002C4BDC /* 回文数.swift */,
+				5B0C7479239DECE5002C4BDC /* 盛最多水的容器.swift */,
 			);
 			path = suanfa;
 			sourceTree = "<group>";
@@ -164,10 +173,13 @@
 				5B7197A72394B40700E97032 /* 整数反转.swift in Sources */,
 				5B09D5C62390AF7E00A4C0AA /* 两数之和.swift in Sources */,
 				5B09D54F2386A06E00A4C0AA /* 回文字符串.swift in Sources */,
+				5B0C747A239DECE5002C4BDC /* 盛最多水的容器.swift in Sources */,
 				5B09D559238E0EAD00A4C0AA /* 移动0.swift in Sources */,
 				5B7197A52394A3F700E97032 /* 两数相加.swift in Sources */,
 				5B09D549238674E700A4C0AA /* onlyOne.swift in Sources */,
 				5B09D54D23868E0D00A4C0AA /* 合并两个有序数组.swift in Sources */,
+				5B0C7478239DDC40002C4BDC /* 回文数.swift in Sources */,
+				5B0C747223989886002C4BDC /* 最长回文子串.swift in Sources */,
 				5B09D557238E099700A4C0AA /* 存在重复元素.swift in Sources */,
 				5B09D54B23867B1600A4C0AA /* 求众数.swift in Sources */,
 				5B09D551238CCCCC00A4C0AA /* 乘积最大子序列.swift in Sources */,
